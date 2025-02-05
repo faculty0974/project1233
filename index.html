@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>S.Anusha Rani</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headMenu{
+    width: 100vw;
+    height: 80px;
+    /* background: red; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    & >ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        line-height: 50px;
+        padding: 10px;
+        text-transform: capitalize;
+        & ul{
+            display: flex;
+            list-style: none;
+            font-weight: 900;
+            & li{
+                cursor: pointer;
+                position: relative;
+                
+            }
+            & li:before{
+                content: '';
+                width: 0;
+                height: 3px;
+                background: #ec7526;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all .7s ease;
+            }
+            & li:hover::before{
+                width: 100%;
+            }
+        }
+    }
+}
+.ULone{
+    font-size: 1.25rem;
+}
+.ULtwo{
+    width: 40%;
+    justify-content: space-between;
+    position: relative;
+}
+.three{
+    & li::before{
+        display: none;
+    }
+}
+.slider{
+    width: 100px;
+    height: 2px;
+    left:0;
+    background: #ec7526;
+    position: absolute;
+
+
+}
+#contact{
+    padding: 3px 4px;
+    border-radius: 7px;
+    color: #111;
+    font-weight: 900;
+    border: none;
+    outline: none;
+}
+.intro{
+    width: 700px;
+    height: 400px;
+    background: #ffffff25;
+    margin:50px auto;
+    border-radius: 10px;
+    display: flex;
+    backdrop-filter: blur(23px);
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    & img{
+        width: 60%;
+        height: 220px;
+        align-self: center;
+        padding: 10px;
+    }
+}
+.dets{
+    width: 50%;
+    color: #c0c0c0c0;
+    font-weight: 900;
+    padding: 10px;
+    text-transform: capitalize;
+}
+</style>
+<body>
+    <div class="headMenu">
+        <ul class="mainUl">
+            <ul class="ULone">
+                <li>s.anusha rani</li>
+            </ul>
+            <ul class="ULtwo">
+                <li>portfolio</li>
+                <li>services</li>
+                <li>project</li>
+                <li>experience</li>
+            </ul>
+            <ul class="three">
+                <li><input id="contact" type="button" value="contact"></li>
+            </ul>
+        </ul>
+    </div>
+  <div class="intro">
+    <div class="img">
+        <img src="user-307993_1280.png" alt="">
+    </div>
+    <div class="dets">
+        <h2>name: S.Anusha Rani </h2><br>
+        <h3>m-tech 2023-25 <br>
+        b-tech 2008-2012 <br>
+    intermediate 2006-2008 <br>
+ssc 2005-2006</h3>
+      </div>
+  </div> 
+ 
+  <script src="script.js"></script> 
+</body>
+</html>
